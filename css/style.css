@@ -11,5 +11,48 @@ h1,h2,h3,h4,h5,h6
 {
 font-size : large;
 font-weight: normal;
+}
+/* 레이아웃 */
+.wrapper{
+  background-color: silver;
+  height: 100vh;
+  /*화면에 보이는 크기*/
+
+}
+.header, .visual, .main-content, .slogan, .footer{
+
+  width: 940px;
+  margin: 0 auto;
+}
+.header{
+  box-sizing: border-box;
+  /*포함되는 크기로 계산 content-box는 반대*/
+  width: 940px;
+  background-color: pink;
+  /*border: 10px solid blue;
+  padding: 20px;*/
+ /* margin:0 50px 100px 200px;*/
+  /*위쪽 아래:0, 우면적:50, 아래 100,왼쪽 200, 상자의 총 면적이 늘어남(투명)*/
+ /* margin: 0 auto;*/
+  /*브라우저 크기만큼 커진다. 자동할당*/
+  height: 10vh;
+}
+.visual{
+background-color: yellow;
+  height:10vh;
+
+}
+.main-content{
+  background-color: blue;
+  height:60vh;
+}
+.slogan{
+  background-color: lime;
+  height:10vh;
+
+}
+.footer{
+  background-color: skyblue;
+  height:10vh;
 
 }
