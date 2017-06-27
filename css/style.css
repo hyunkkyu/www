@@ -14,45 +14,90 @@ font-weight: normal;
 }
 /* 레이아웃 */
 .wrapper{
-  background-color: silver;
+/*background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(255,255,255,1));*/
+ 
+ /*background-image: url(images/bg_flower.png),linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+ background-repeat: no-repeat;
+ background-position: 50% 0, 0 0;*/
+ /*단축표기법*/
+ background: url(images/bg_flower.png) no-repeat 50% 0, linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)repeat  0 0;
+
+/*배경이미지를 먼저 할당해주어야 위에 올라와보인다 - > url*/
+
+  /*angle값 들어가도 됨 right 도있음*/
+  
+  background-attachment: fixed;
+  
   height: 100vh;
   /*화면에 보이는 크기*/
-
+ 
 }
 .header, .visual, .main-content, .slogan, .footer{
-
+/*(.)점찍어야 클래스 인식됨*/
   width: 940px;
   margin: 0 auto;
 }
 .header{
   box-sizing: border-box;
+ background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   /*포함되는 크기로 계산 content-box는 반대*/
   width: 940px;
-  background-color: pink;
+  border-radius: 0 0 15px 15px;
+/*단축표기법 top을 기준으로 시계방향으로 돌아감.*/
   /*border: 10px solid blue;
   padding: 20px;*/
  /* margin:0 50px 100px 200px;*/
   /*위쪽 아래:0, 우면적:50, 아래 100,왼쪽 200, 상자의 총 면적이 늘어남(투명)*/
  /* margin: 0 auto;*/
   /*브라우저 크기만큼 커진다. 자동할당*/
-  height: 10vh;
+  height: 115px;
 }
 .visual{
-background-color: yellow;
-  height:10vh;
+ 
+  height:100px;
 
 }
 .main-content{
-  background-color: blue;
-  height:60vh;
+background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+   border-radius: 15px 15px 15px 15px;
+  /*height:60vh;*/
+  min-height: 400px;
+  display: flex;
+  padding: 30px;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  /*align-items: flex-start;*/
+}
+.group{
+
+}
+.group1{
+width: 250px;
+/*height: 100px;*/
+/*align-self: flex-end;*/
+}
+.group2{
+width: 380px;
+/*height: 200px;*/
+/*align-self: flex-start;*/
+}
+.group3{
+width: 190px;
+/*height: 150px;*/
+/*align-self: center;*/
 }
 .slogan{
-  background-color: lime;
+ 
   height:10vh;
 
 }
+.footer-bg{
+ background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
 .footer{
-  background-color: skyblue;
+  
+
   height:10vh;
 
 }
