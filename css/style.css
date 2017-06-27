@@ -1,4 +1,38 @@
 @charset "utf-8";
+
+/*웹폰트 선언*/
+
+@font-face {
+    font-family: 'Noto Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url('font/eot/NotoSansKR-Regular-Hestia.eot'),
+    url('font/eot/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('font/woff/NotoSansKR-Regular-Hestia.woff') format('woff'),
+    url('font/otf/NotoSansKR-Regular-Hestia.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+    url('font/eot/NotoSansKR-Bold-Hestia.eot'),
+    url('font/eot/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
+    url('font/woff/NotoSansKR-Bold-Hestia.woff') format('woff'),
+    url('font/otf/NotoSansKR-Bold-Hestia.otf') format('opentype');
+}
+@font-face {
+    font-family: 'webcafeIcon';
+    font-weight:400;
+    src: url('font/webcafeIcon.eot');
+    src: url('font/webcafeIcon.eot?#iefix') format('embedded-opentype'),
+         url('font/webcafeIcon.woff') format('woff'),
+         url('font/webcafeIcon.ttf') format('truetype'),
+         url('font/webcafeIcon.svg#webcaferegular') format('svg');
+}
+/*@import url("https://fonts.googleapis.com/css?family=Noto+Sans" );*/
+/*이렇게 구글에서 가져올 수도 있다.*/
 /* 요소의 여백 초기화 */
 html, body, h1, h2, h3, h4, h5, h6, p{
 
@@ -11,6 +45,13 @@ h1,h2,h3,h4,h5,h6
 {
 font-size : large;
 font-weight: normal;
+}
+/* 기본스타일 */
+body{
+     font-family: 'Noto Sans Regular',serif;
+     /*앞 글꼴 인식 못할 시 다음 글꼴 적용*/
+     /*뒤는 글꼴 군*/
+    
 }
 /* 레이아웃 */
 .wrapper{
