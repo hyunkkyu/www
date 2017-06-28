@@ -190,6 +190,7 @@ a {
 
 .main-menu>li {
     float: left;
+    position: relative;
 }
 
 .main-menu>li>a {
@@ -219,10 +220,18 @@ a {
     list-style-type: none;
     background: lime;
     position: absolute;
+    white-space: nowrap;
+}
+
+.main-menu ul li {
+    display: inline-block;
 }
 
 .about-HTML {
     display: block;
+    top: 47px;
+    left: 225;
+    padding: 0 20px;
 }
 
 .about-CSS {
