@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web Cafe</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="wrapper">
-     <header class="header">헤더</header>
-     <div class="visual">비주얼</div>
-     <main class="main-content">
-        <div class="group group1">컨텐츠컬럼1</div>
-        <div class="group group2">컨텐츠컬럼2</div>
-        <div class="group group3">컨텐츠컬럼3</div>
 
-     </main>
-     <article class="slogan">슬로건</article>
-     <div class="footer-bg"><footer class="footer">푸터</footer></div>  
-    </div>  
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <!--euc-kr은 한국어만 지원된다! 위에는 다국어 지원-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--모바일개발에 필요하다. device 크기에 맞추어 보여달라는 명령-->
+    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+
+    <title>웹카페 - 웹접근성 및 웹표준, HTML5, CSS3</title>
+    <!--핵심적인 키워드 검색엔진고려한 이름 넣어야 한다.-->
+
+    <link rel="shortcut icon" href="images/common/webcafe.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!--LINK : 외부링크를 연결해서 보여준다 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <!--이렇게 구글에서 추가해서 쓸 수도 있다! 준비 안되었을 떄-->
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="logo">
+                <img src="images/logo.png" alt="Web cafe">
+                <!--이미지와 이미지를 대신할 제목!-->
+            </h1>
+            <ul class="info-menu">
+                <li>
+                    <a href="#">홈</a>
+                </li>
+                <li>
+                    <a href="#">로그인</a>
+                </li>
+                <li>
+                    <a href="#">회원가입</a>
+                </li>
+                <li>
+                    <a href="#">사이트맵</a>
+                </li>
+                <li>
+                    <a href="#">english</a>
+                </li>
+            </ul>
+
+        </header>
+
+
+        <div class="visual">비주얼</div>
+        <main class="main-content">
+            <div class="group group1">컨텐츠컬럼1</div>
+            <div class="group group2">컨텐츠컬럼2</div>
+            <div class="group group3">컨텐츠컬럼3</div>
+
+        </main>
+        <article class="slogan">슬로건</article>
+        <div class="footer-bg">
+            <footer class="footer">푸터</footer>
+        </div>
+    </div>
+</body>
+
 </html>
