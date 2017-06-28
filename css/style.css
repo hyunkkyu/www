@@ -199,14 +199,49 @@ a {
     line-height: 45px;
     padding: 0 20px;
     display: block;
-    line-height: relative;
     border-left: 2px solid rgba(255, 255, 255, 0.6);
+    text-shadow: -1px -1px 0 #181818, 1px 1px 0 #181818, 2px 2px 0 #181818, 3px 3px 0 #181818;
+    /*text-shadow: 3px 0px #181818, 0px 3px #181818, -3px 0px #181818, 0px -3px #181818;*/
+    /*윤곽해주는방법~*/
+}
+
+.main-menu>li>a:hover {
+    color: hsla(30, 60%, 60%, 0.9);
+}
+
+.main-menu>li>a:hover::after {
+    content: "";
+    display: block;
+    border-top: 1.8px solid #181818;
 }
 
 .main-menu ul {
     list-style-type: none;
     background: lime;
     position: absolute;
+}
+
+.about-HTML {
+    display: block;
+}
+
+.about-CSS {
+    display: none;
+}
+
+.web-standards {
+    display: none;
+}
+
+.web-accesibility {
+    display: none;
+}
+
+.qna {
+    display: none;
+}
+
+.archive {
     display: none;
 }
 
