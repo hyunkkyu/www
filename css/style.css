@@ -87,7 +87,7 @@ body {
  background-repeat: no-repeat;
  background-position: 50% 0, 0 0;*/
     /*단축표기법*/
-    background: url(images/bg_flower.png) no-repeat 50% 0, linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)repeat 0 0;
+    background: url(images/bg_flower.png) no-repeat 50% 0, linear-gradient(to top, #0ba360 0%, #3cba92 65%, #0ba360 100%)repeat 0 0;
     /*배경이미지를 먼저 할당해주어야 위에 올라와보인다 - > url*/
     /*angle값 들어가도 됨 right 도있음*/
     background-attachment: fixed;
@@ -118,7 +118,7 @@ a {
 
 .header {
     box-sizing: border-box;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     /*포함되는 크기로 계산 content-box는 반대*/
     width: 940px;
     border-radius: 0 0 15px 15px;
@@ -129,9 +129,9 @@ a {
     /*위쪽 아래:0, 우면적:50, 아래 100,왼쪽 200, 상자의 총 면적이 늘어남(투명)*/
     /* margin: 0 auto;*/
     /*브라우저 크기만큼 커진다. 자동할당*/
-    min-height: 115px;
+    min-height: 130px;
     position: relative;
-    padding: 10px;
+    padding: 20px;
 }
 
 
@@ -139,18 +139,18 @@ a {
 
 .logo {
     position: absolute;
-    top: 45px;
+    top: 68px;
     left: 60px;
 }
 
 
-/*텍스트링크 - 안내링크*/
+/* 텍스트링크 - 안내링크 */
 
 .info-menu {
     list-style-type: none;
     font-size: 0px;
     text-align: right;
-    /*block일 때만 적용 가능하다*/
+    /* block일 때만 적용 가능하다 */
 }
 
 .info-menu li,
@@ -173,6 +173,41 @@ a {
 
 .info-menu li:last-child::after {
     content: "";
+}
+
+
+/* 메인 메뉴 */
+
+.main-menu {
+    /*background: linear-gradient(to bottom, #e5892d 0%, #e0652c 35%, #e0652c 65%, #e5892d 100%);*/
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    list-style-type: none;
+    border-top: 2px solid #181818;
+    border-radius: 0 0 5px 5px;
+    padding-left: 225px;
+    height: 45px;
+}
+
+.main-menu>li {
+    float: left;
+}
+
+.main-menu>li>a {
+    font-size: 1.7rem;
+    font-family: "noto sans bold";
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 45px;
+    padding: 0 20px;
+    display: block;
+    line-height: relative;
+    border-left: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.main-menu ul {
+    list-style-type: none;
+    background: lime;
+    position: absolute;
+    display: none;
 }
 
 .visual {
