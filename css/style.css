@@ -66,10 +66,16 @@ h6 {
 
 /* 기본스타일 */
 
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: 'Noto Sans Regular', serif;
     /*앞 글꼴 인식 못할 시 다음 글꼴 적용*/
     /*뒤는 글꼴 군*/
+    font-size: 1.4rem;
+    /*루트기준으로계산한다.*/
 }
 
 
@@ -100,6 +106,14 @@ body {
 }
 
 
+/*링크 스타일*/
+
+a {
+    color: inherit;
+    text-decoration-line: none;
+}
+
+
 /*헤더*/
 
 .header {
@@ -117,6 +131,7 @@ body {
     /*브라우저 크기만큼 커진다. 자동할당*/
     min-height: 115px;
     position: relative;
+    padding: 10px;
 }
 
 
@@ -126,6 +141,38 @@ body {
     position: absolute;
     top: 45px;
     left: 60px;
+}
+
+
+/*텍스트링크 - 안내링크*/
+
+.info-menu {
+    list-style-type: none;
+    font-size: 0px;
+    text-align: right;
+    /*block일 때만 적용 가능하다*/
+}
+
+.info-menu li,
+.info-menu a {
+    display: inline-block;
+}
+
+.info-menu li {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.info-menu a {
+    padding: 10px;
+}
+
+.info-menu li::after {
+    content: "  ";
+}
+
+.info-menu li:last-child::after {
+    content: "";
 }
 
 .visual {
