@@ -43,7 +43,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -97,6 +99,9 @@ body {
     margin: 0 auto;
 }
 
+
+/*헤더*/
+
 .header {
     box-sizing: border-box;
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
@@ -110,7 +115,17 @@ body {
     /*위쪽 아래:0, 우면적:50, 아래 100,왼쪽 200, 상자의 총 면적이 늘어남(투명)*/
     /* margin: 0 auto;*/
     /*브라우저 크기만큼 커진다. 자동할당*/
-    height: 115px;
+    min-height: 115px;
+    position: relative;
+}
+
+
+/*로고*/
+
+.logo {
+    position: absolute;
+    top: 45px;
+    left: 60px;
 }
 
 .visual {
