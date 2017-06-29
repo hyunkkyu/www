@@ -282,8 +282,33 @@ a {
     left: -320px;
 }
 
+
+/*비주얼*/
+
+@keyframes text-ani {
+    0% {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        font-size: 24px;
+        color: rgba(0, 0, 0, 1);
+        transform: translate(400px, 70px);
+    }
+}
+
 .visual {
-    height: 100px;
+    height: 120px;
+    position: relative;
+}
+
+.visual-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0);
+    animation: text-ani 0.5s forwards ease-in-out;
+    /*앞에 나오는게 duration delay는 옵션이므로 뒤에로 인식한다.*/
 }
 
 .main-content {
