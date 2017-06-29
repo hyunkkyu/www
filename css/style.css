@@ -303,6 +303,25 @@ a {
     position: relative;
 }
 
+.visual::before,
+.visual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    /*똑같은 조건을 가진 before after를 지정하고 깜빡거리는 효과만들기*/
+}
+
+.visual::before {
+    background: url("images/ani_flower_01.png") no-repeat 0 -10px, url("images/ani_flower_02.png") no-repeat 670px 0;
+}
+
+.visual::after {
+    background: url("images/ani_flower_03.png") no-repeat 300px 0, url("images/ani_flower_04.png") no-repeat 800px 0;
+}
+
 .visual-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: inline-block;
