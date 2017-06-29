@@ -129,9 +129,9 @@ a {
     /*위쪽 아래:0, 우면적:50, 아래 100,왼쪽 200, 상자의 총 면적이 늘어남(투명)*/
     /* margin: 0 auto;*/
     /*브라우저 크기만큼 커진다. 자동할당*/
-    min-height: 130px;
+    min-height: 150px;
     position: relative;
-    padding: 20px;
+    padding: 0px 30px;
 }
 
 
@@ -139,8 +139,8 @@ a {
 
 .logo {
     position: absolute;
-    top: 68px;
-    left: 60px;
+    top: 55px;
+    left: 50px;
 }
 
 
@@ -183,9 +183,9 @@ a {
     background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     list-style-type: none;
     border-top: 2px solid #181818;
-    border-radius: 0 0 5px 5px;
-    padding-left: 225px;
-    height: 45px;
+    border-radius: 0 0 7px 7px;
+    padding-left: 230px;
+    height: 60px;
 }
 
 .main-menu>li {
@@ -193,11 +193,11 @@ a {
     position: relative;
 }
 
-.main-menu>li>a {
-    font-size: 1.7rem;
+.main-menu span {
+    font-size: 1.6rem;
     font-family: "noto sans bold";
     color: rgba(255, 255, 255, 0.75);
-    line-height: 45px;
+    line-height: 60px;
     padding: 0 20px;
     display: block;
     border-left: 2px solid rgba(255, 255, 255, 0.6);
@@ -206,11 +206,14 @@ a {
     /* 윤곽해주는방법~ */
 }
 
-.main-menu>li>a:hover {
+.main-menu span:hover,
+.main-menu span:focus {
     color: hsla(30, 60%, 60%, 0.9);
+    outline: 0;
 }
 
-.main-menu>li>a:hover::after {
+.main-menu span:hover::after,
+.main-menu span:focus::after {
     content: "";
     display: block;
     border-top: 1.8px solid #181818;
@@ -218,7 +221,6 @@ a {
 
 .main-menu ul {
     list-style-type: none;
-    background: lime;
     position: absolute;
     white-space: nowrap;
 }
@@ -244,31 +246,40 @@ a {
     /* a 태그를 사용해야 hover를 자연스럽게 사용가능하다.  */
 }
 
-.about-HTML {
+.main-menu ul a {
+    padding: 8px 15px 7px 0;
     display: block;
-    top: 47px;
-    left: 225;
+}
+
+.about-HTML {
+    display: none;
+    left: 0;
     padding: 0 20px;
 }
 
 .about-CSS {
     display: none;
+    left: 0;
 }
 
 .web-standards {
     display: none;
+    left: 0;
 }
 
 .web-accesibility {
     display: none;
+    left: -130px;
 }
 
 .qna {
     display: none;
+    left: -170px;
 }
 
 .archive {
     display: none;
+    left: -320px;
 }
 
 .visual {
