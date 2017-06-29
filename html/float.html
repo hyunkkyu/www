@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float 속성 읽히기</title>
+    <style>
+        .box {
+            background: yellow;
+            width: 500px;
+            /*overflow: hidden;*/
+            /*두번째 방법 이미지와 맞게 박스를 늘린다*/
+            /*단점 넘치면 이미지가 짤림*/
+        }
+        /*세번째방법 마지막에 자식요소를 추가*/
+        /*좀 더 안전한 방법, 이미지 안잘림*/
+        
+        .box::after {
+            content: "";
+            /*가짜상자만들기 content값 :null*/
+            display: block;
+            clear: both;
+        }
+        /*강제 마진 추가*/
+        
+        .box img {
+            float: right;
+            position: relative;
+            right: -50px;
+            /*이미지가  짤림*/
+        }
+        
+        .note {
+            background: palevioletred;
+            /*clear: both;*/
+            /*강제로 마진을 추가 시켜서 float가 겹치지 않게 한다.*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <img src="../images/news.gif" alt=""> 【콴티코(미 버지니아)=뉴시스】 전신 기자 = 문재인 대통령이 28일 오후 (현지시
+    </div>
+    <div class="note">
+        【콴티코(미 버지니아)=뉴시스】 전신 기자 = 문재인 대통령이 28일 오후(현지시간) 방미 첫 일정으로 버지니아주 콴티코 미 해병대 국립박물관에 있는 '장진호 전투 기념비'를 방문해 그당시 참전했던 해병의 흥남철수 사진을 보며 설명을 듣고 있다. 2017.06.29.
+    </div>
+</body>
+
+</html>

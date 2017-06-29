@@ -202,8 +202,8 @@ a {
     display: block;
     border-left: 2px solid rgba(255, 255, 255, 0.6);
     text-shadow: -1px -1px 0 #181818, 1px 1px 0 #181818, 2px 2px 0 #181818, 3px 3px 0 #181818;
-    /*text-shadow: 3px 0px #181818, 0px 3px #181818, -3px 0px #181818, 0px -3px #181818;*/
-    /*윤곽해주는방법~*/
+    /* text-shadow: 3px 0px #181818, 0px 3px #181818, -3px 0px #181818, 0px -3px #181818;*/
+    /* 윤곽해주는방법~ */
 }
 
 .main-menu>li>a:hover {
@@ -225,6 +225,23 @@ a {
 
 .main-menu ul li {
     display: inline-block;
+}
+
+.main-menu ul a::before {
+    font-family: "webcafeicon";
+    content: "r";
+    position: relative;
+    top: 2px;
+    /* 글꼴 변환 후 텍스트 삽입 */
+}
+
+
+/* navigation 기능 추가! focus*/
+
+.main-menu ul a:hover::before,
+.main-menu ul a:focus::before {
+    content: "c";
+    /* a 태그를 사용해야 hover를 자연스럽게 사용가능하다.  */
 }
 
 .about-HTML {
