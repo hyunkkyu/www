@@ -29,4 +29,10 @@
 |:---:|---:|---:|
 | 점수| 100| 90 |
 
+-----------------------------
+<img src="https://i2.wp.com/blog.informaticalab.com/wp-content/uploads/2015/02/markdown.jpg?resize=600%2C399" width="150px" height="100px">
+ 
+<img src="https://i2.wp.com/blog.informaticalab.com/wp-content/uploads/2015/02/markdown.jpg?resize=600%2C399">
+이것은 ~~마크다운~~ **문법**입니다.
+
 <img src="https://i2.wp.com/blog.informaticalab.com/wp-content/uploads/2015/02/markdown.jpg?resize=600%2C399">
