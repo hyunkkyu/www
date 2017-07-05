@@ -30,7 +30,8 @@
 
 /* 숨김 콘텐츠 */
 
-legend {
+legend,
+.readerable-hidden {
     position: absolute;
     left: -9999em;
 }
@@ -481,6 +482,28 @@ a {
 
 .find {
     float: right;
+}
+
+
+/*유효성검사배너링크*/
+
+.validation {
+    margin-top: 20px;
+}
+
+.validation-list li {
+    list-style-type: none;
+}
+
+.validation a {
+    background: url("images/validation_icon.png") no-repeat scroll 15px 50%, rgba(0, 0, 0, 0) linear-gradient(to bottom, #eee, #ccc) repeat scroll 0 0;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-indent: 3em;
 }
 
 .slogan {
