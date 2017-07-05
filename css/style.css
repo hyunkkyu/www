@@ -554,6 +554,50 @@ a {
     margin-top: 5px;
 }
 
+.search {
+    /*-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    */
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ccc, #fff) repeat scroll 0 0;
+    border-color: #aaa #aaa #fff;
+    border-image: none;
+    border-radius: 15px 15px 0 0;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px 25px 10px;
+}
+
+.search label::before {
+    content: "z";
+    font-family: "webcafeIcon";
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+}
+
+.search input {
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    /*font-family: "Noto Sans Regular";*/
+    /*font-size: 1.3rem;
+    height: 22px;
+    margin: 0 3px 0 2px;
+    padding: 1px 1px 1px 5px;*/
+    width: 150px;
+}
+
+
+/*.btn-search {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #333, #999) repeat scroll 0 0;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: #fff;
+    height: 22px;
+    padding: 0 10px;
+}*/
+
 .slogan {
     height: 10vh;
 }
