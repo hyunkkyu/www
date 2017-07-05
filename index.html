@@ -116,10 +116,13 @@
                 <div class="login">
                     <h2 class="login-heading">로그인</h2>
                     <form action="javascript:alert('회원님 반갑습니다.');" class="login-form">
+                        <!--클릭시 메세지 띄워줌-->
                         <fieldset>
                             <legend>회원 로그인 폼</legend>
                             <div class="user-email">
                                 <label for="user-email">아이디</label>
+
+                                <!--앞의 것과 연결은 class아니고 id로만 가능하다! -->
                                 <input type="email" id="user-email" required placeholder="이메일주소">
                             </div>
                             <div class="user-pw">
@@ -130,8 +133,9 @@
                         </fieldset>
                     </form>
                     <ul class="member">
-                        <li><a href="#" class="join">회원가입</a></li>
-                        <li><a href="#" class="find">아이디/비밀번호 찾기</a></li>
+                        <!--member이름의 리스트 클래스 만듬-->
+                        <li class="join icon-female"><a href="#">회원가입</a></li>
+                        <li class="find icon-female"><a href="#">아이디/비밀번호 찾기</a></li>
                     </ul>
                 </div>
             </div>

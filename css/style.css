@@ -2,6 +2,7 @@
 
 /*문자 인코딩*/
 
+@import "fontello.css";
 
 /*웹폰트 선언*/
 
@@ -84,6 +85,15 @@ body {
     /*뒤는 글꼴 군*/
     font-size: 1.4rem;
     /*루트기준으로계산한다.*/
+}
+
+input,
+textarea,
+select,
+option,
+button {
+    font-family: inherit;
+    font-size: inherit;
 }
 
 
@@ -385,7 +395,7 @@ a {
 }
 
 .login {
-    background: radial-gradient(circle at right top, #e5892d, #e0652c);
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
@@ -449,6 +459,28 @@ a {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+
+/*float문제를 해결하기 위한 clearfix*/
+
+.member::After {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon-female::before {
+    color: #0ba360;
+}
+
+.join {
+    float: left;
+}
+
+.find {
+    float: right;
 }
 
 .slogan {
