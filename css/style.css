@@ -506,6 +506,53 @@ a {
     text-indent: 3em;
 }
 
+
+/* 웹 관련 용어 */
+
+.term {
+    background: linear-gradient(to bottom, #eee, #ccc);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.term-heading {
+    font-family: "Noto Sans Bold";
+    font-size: 1.5rem;
+}
+
+.term-list {
+    margin-top: 15px;
+}
+
+.term-list::before,
+.term-list::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.term-list-subject,
+.term-list-brief {
+    float: right;
+    width: 145px;
+}
+
+.term-list-subject {
+    color: #296897;
+    font-family: "Noto Sans Bold";
+}
+
+.term-list-thumbnail {
+    float: left;
+}
+
+.term-list-brief {
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
 .slogan {
     height: 10vh;
 }
