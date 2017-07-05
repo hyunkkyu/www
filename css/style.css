@@ -37,9 +37,6 @@ legend,
 }
 
 
-/*@import url("https://fonts.googleapis.com/css?family=Noto+Sans" );*/
-
-
 /*이렇게 구글에서 가져올 수도 있다.*/
 
 
@@ -85,6 +82,7 @@ body {
     /*앞 글꼴 인식 못할 시 다음 글꼴 적용*/
     /*뒤는 글꼴 군*/
     font-size: 1.4rem;
+    line-height: 1.2;
     /*루트기준으로계산한다.*/
 }
 
@@ -510,7 +508,7 @@ a {
 /* 웹 관련 용어 */
 
 .term {
-    background: linear-gradient(to bottom, #eee, #ccc);
+    background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
     border: 1px solid #aaa;
     border-radius: 5px;
     padding: 15px;
@@ -545,10 +543,13 @@ a {
 }
 
 .term-list-thumbnail {
+    position: absolute;
     float: left;
+    margin: 0;
 }
 
 .term-list-brief {
+    position: relative;
     line-height: 1.5;
     margin-top: 5px;
 }
