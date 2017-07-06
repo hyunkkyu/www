@@ -701,7 +701,39 @@ a {
     top: 2px;
 }
 
-.news {}
+.news {
+    position: relative;
+    margin-top: 20px;
+}
+
+.news-heading {
+    font-family: "noto sans bold";
+    font-size: 1.6rem;
+    color: darkgreen;
+}
+
+.news-item {
+    margin-top: 25px;
+    padding: 130px;
+    position: relative;
+}
+
+.news-item a {
+    display: block;
+}
+
+.news-item-thumnail {
+    margin: 0;
+    position: absolute;
+}
+
+.news-more {
+    background: green;
+    padding: 8px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}
 
 .slogan {
     height: 10vh;
