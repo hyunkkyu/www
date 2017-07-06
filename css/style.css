@@ -596,6 +596,9 @@ a {
     padding: 0 10px;
 }
 
+
+/*공지사항 및 자료실*/
+
 .board {
     height: 170px;
     margin-top: 20px;
@@ -603,18 +606,101 @@ a {
 }
 
 .notice-list,
-.pds-list {
+.pds-list,
+.notice-more,
+.pds-more {
     display: none;
+}
+
+.act ul,
+.act>a {
+    display: block;
 }
 
 .notice-heading,
 .pds-heading {
-    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #eee, #ccc) repeat scroll 0 0;
     border: 1px solid #aaa;
     border-radius: 5px 5px 0 0;
-    color: rgba(255, 255, 255, 0.75);
+    color: #666;
+    cursor: pointer;
     float: left;
     padding: 5px 10px;
+}
+
+.act .notice-heading,
+.act .pds-heading {
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    border-color: rgba(255, 255, 255, 0.6);
+    border-bottom-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    outline: 0;
+}
+
+.notice-list,
+.pds-list {
+    left: 0;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    list-style-type: none;
+}
+
+.notice-list li,
+.pds-list li {
+    background: pink;
+    margin-bottom: 8px;
+}
+
+.notice-list li::after,
+.pds-list li::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.notice-list a,
+.pds-list a {
+    background: skyblue;
+    float: left;
+    /*세가지를 함께 쓰기*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*여기까지*/
+    width: calc(100% - 80px);
+}
+
+.notice-list a::before,
+.pds-list a::before {
+    content: "r";
+    font-family: "webcafeIcon";
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.notice-list time,
+.pds-list time {
+    float: right;
+}
+
+.notice-more,
+.pds-more {
+    padding: 8px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}
+
+.notice-more::before,
+.pds-more::before {
+    color: #23f321;
+    content: "p";
+    font-family: "WebcafeIcon";
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
 }
 
 .slogan {

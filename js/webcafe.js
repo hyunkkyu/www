@@ -25,3 +25,10 @@ $(function() {
 
     );
 });
+//탭메뉴 제어를 위한 자바 스크립트
+$(function() {
+    $(".board h2").click(function() {
+        $(this).parent().addClass("act").siblings().removeClass("act");
+
+    });
+});
