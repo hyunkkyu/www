@@ -648,7 +648,6 @@ a {
 
 .notice-list li,
 .pds-list li {
-    background: pink;
     margin-bottom: 8px;
 }
 
@@ -661,7 +660,6 @@ a {
 
 .notice-list a,
 .pds-list a {
-    background: skyblue;
     float: left;
     /*세가지를 함께 쓰기*/
     overflow: hidden;
@@ -702,6 +700,8 @@ a {
     position: relative;
     top: 2px;
 }
+
+.news {}
 
 .slogan {
     height: 10vh;
