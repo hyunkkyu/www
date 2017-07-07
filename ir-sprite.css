@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* ir기법예제 */
+
+.ir {
+    width: 290px;
+    height: 0;
+    padding-top: 195px;
+    overflow: hidden;
+    background: url("images/title.png") no-repeat;
+}
+
+.btn-prev,
+.btn-next {
+    background: wheat;
+}
