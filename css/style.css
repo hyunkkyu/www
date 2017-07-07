@@ -791,6 +791,124 @@ a {
     top: 2px;
 }
 
+
+/*신규이벤트 및 관련사이트*/
+
+.event-related {
+    background: linear-gradient(to bottom, #0ba360 0%, #3cba92 80%, #e2ebf0 100%);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    line-height: 2vh;
+}
+
+.event {
+    border-bottom: 2px solid darkgreen;
+    position: relative;
+}
+
+.event-heading,
+.related-heading {
+    font-family: "noto sans bold";
+    font-size: 1.6rem;
+}
+
+#event-detail {
+    margin-top: 10px;
+}
+
+#event-detail img {
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#event-detail p {
+    padding-bottom: 10px;
+}
+
+.event-heading span,
+.related-heading span {
+    font-family: "noto sans bold";
+    color: firebrick;
+}
+
+.btn-event {
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.btn-event-prev,
+.btn-event-next {
+    background: white url("images/backpage_forwardpage.png");
+    border: 0 none;
+    height: 0;
+    overflow: hidden;
+    padding: 19px 0 0 0;
+    cursor: pointer;
+    width: 19px;
+}
+
+.btn-event-prev:focus,
+.btn-event-next:focus {
+    outline: 1px dotted #181818;
+}
+
+.btn-event-next {
+    background-position: 100% 0;
+}
+
+.event-heading {
+    margin-bottom: 10px;
+}
+
+.event-detail {
+    box-shadow: 0 10px 15px 0 #aaa;
+    margin-bottom: 15px;
+}
+
+.event::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #999, #eee) repeat scroll 0 0;
+    content: "";
+}
+
+.related {
+    margin-top: 15px;
+}
+
+.related-list {
+    list-style-type: none;
+    border: 1px solid #181818;
+    border-radius: 5px;
+    height: 25px;
+    overflow: hidden;
+    /*넘치는 모양을 집어 넣어준다*/
+    margin-top: 5px;
+    transition: all 0.5s;
+    /*스르륵~효과*/
+}
+
+
+/*마우스를 올렸을 때 늘어난다.*/
+
+.related-list:hover,
+.related-list:focus {
+    height: 125px;
+    padding: 5px 0;
+}
+
+.related-list a {
+    display: block;
+    line-height: 25px;
+    padding-left: 25px;
+}
+
+.related-list a:focus {
+    color: firebrick;
+}
+
 .slogan {
     height: 10vh;
 }
