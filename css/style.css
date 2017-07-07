@@ -702,37 +702,93 @@ a {
 }
 
 .news {
-    position: relative;
     margin-top: 20px;
+    position: relative;
+}
+
+.news::before {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #999, #eee) repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 30px;
+    width: 80%;
 }
 
 .news-heading {
-    font-family: "noto sans bold";
-    font-size: 1.6rem;
     color: darkgreen;
+    font-family: "Noto Sans Bold";
+    font-size: 1.5rem;
 }
 
 .news-item {
     margin-top: 25px;
-    padding: 130px;
+    padding-left: 130px;
     position: relative;
 }
 
 .news-item a {
     display: block;
+    left: 10px;
+}
+
+.news-item-heading {
+    font-family: "Noto Sans Bold";
+    font-size: 1.6rem;
+}
+
+.news-item-heading::before {
+    content: "r";
+    font-family: "webcafeIcon";
+    position: relative;
+    top: 2px;
+}
+
+.news-item-date,
+.news-item-brief {
+    margin-top: 5px;
+    padding-left: 1em;
+}
+
+.news-item-date {
+    display: block;
+}
+
+.news-item-brief {
+    line-height: 1.5;
+}
+
+.news-item figure {
+    left: -200px;
+    position: relative;
+    text-align: center;
+    top: -140px;
+}
+
+.news-item img {
+    box-shadow: 0 10px 15px 0 #aaa;
+    margin-bottom: 15px;
 }
 
 .news-item-thumnail {
-    margin: 0;
-    position: absolute;
+    left: 10px;
 }
 
 .news-more {
-    background: green;
     padding: 8px;
     position: absolute;
     right: -8px;
     top: -8px;
+}
+
+.news-more::before {
+    color: #23f321;
+    content: "p";
+    font-family: "webcafeIcon";
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
 }
 
 .slogan {
