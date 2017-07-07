@@ -893,11 +893,18 @@ a {
 
 /*마우스를 올렸을 때 늘어난다.*/
 
+.list-act {
+    height: 125px;
+    padding: 5px 0;
+}
+
+
+/*
 .related-list:hover,
 .related-list:focus {
     height: 125px;
     padding: 5px 0;
-}
+}*/
 
 .related-list a {
     display: block;
@@ -907,6 +914,94 @@ a {
 
 .related-list a:focus {
     color: firebrick;
+}
+
+.favorite {
+    background: linear-gradient(to bottom, #0ba360 0%, #3cba92 40%, #e2ebf0 100%);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.favorite-heading,
+.favorite-heading span {
+    font-family: "noto sans bold";
+    font-size: 1.5rem;
+}
+
+.favorite-heading {
+    font-family: "Noto Sans Bold";
+    font-size: 1.5rem;
+}
+
+.favorite-heading span {
+    color: firebrick;
+}
+
+.favorite-list {
+    list-style-type: none;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.favorite-list li {
+    counter-increment: number;
+    line-height: 20px;
+    position: relative;
+    left: -30px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.favorite-list li::before {
+    background: #aaa none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    content: counter(number, decimal);
+    font-size: 1.2rem;
+    margin-right: 5px;
+    padding: 0 5px;
+}
+
+.up,
+.down,
+.stop {
+    background: rgba(0, 0, 0, 0) url("images/rank.png") no-repeat scroll 0 0;
+    box-sizing: border-box;
+    height: 0px;
+    overflow: hidden;
+    padding-top: 11px;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+}
+
+.stop {
+    background-position: 0 50%;
+}
+
+.down {
+    background-position: 0 100%;
+}
+
+.favorite-more {
+    padding: 8px;
+    position: absolute;
+    right: -5px;
+    top: 2px;
+}
+
+.favorite-more::before {
+    color: #23f321;
+    content: "p";
+    font-family: "webcafeIcon";
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
 }
 
 .slogan {
